@@ -1,0 +1,236 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+/*Utilitarias*/
+.container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+/*Main*/
+.main{
+    margin-top: -2em;
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
+
+.main-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #0F2620
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #7BA69A
+}
+
+.btn-danger {
+    color: white;
+    background-color: #A6444C;
+}
+
+.btn-info {
+    color: black;
+    background-color: #DDF2CE
+}
+
+.btn-dark {
+    color: white;
+    background-color: #25302A
+}
+/*Header*/
+.bg-header{
+    background-image: url('../assets/images/bg-header-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 18.75em;
+}
+/*Navbar*/
+.bg-navbar{
+ background-color: rgba(0, 0, 0, 0.63);
+ padding: 1.5em;
+}
+.navbar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(min-width: 768px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2rem;
+    text-decoration:none;
+    font-weight: 500;
+    margin-bottom: 1em; /*32px ya q cambie con rem*/
+    align-items: center;
+}
+
+@media(min-width: 768px){
+    .navbar-brand{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+}
+
+.navbar-brand img{
+    width: 2em; /*64px ya q cambie con rem*/
+}
+
+.navbar-nav{
+background-color: rgba(0, 0, 0, 0.9);
+padding: 1em; /*32px ya q cambie con rem*/
+border-radius: 0.3em;
+}
+
+.nav-link{
+    display: inline-block;
+    padding: 0.3em;
+    text-decoration: none;
+    color: white;
+}
+
+/*hover cambia el color de fondo de cuando pasamos el mouse por encima del elemento*/
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    border-radius: 0.5em;
+}
+@media (min-width: 768px)
+{
+    .tienda{
+        display: flex;
+        gap: 1em;
+    }
+}
+/*Cards*/
+.card {
+    background-color: #A6444C;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 500;
+}
+
+.card-body p {
+    font-weight: 200;
+}
+/*Nosotros*/
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color:#25302A ;
+}
+
+.nosotros-col-img{
+    background-image: url('../assets/images/nosotros-min.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 21.875em;
+    order: 2;
+}
+
+.nosotros-col-text{
+    order: 1;
+
+}
+
+@media (min-width: 576px)
+{
+.nosotros-col-img{
+    height: 31.25em;
+}
+}
+
+@media (min-width: 768px)
+{
+.nosotros{
+    flex-direction: row;
+}
+
+.nosotros-col-img{
+    order: 1;
+    flex: 1 1 0;
+}
+
+.nosotros-body{
+    order: 2;
+    flex: 1 1 0
+}
+}
+
+.nosotros-body{
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.nosotros-body h2{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nosotros-body p{
+    font-weight: 200;
+}
+/*Footer*/
+.bg-footer{
+    background-color:#25302A ;
+    color: white;
+}
+
+.bg-footer p{
+    margin: 0;
+    padding: 1em 0em;
+    text-align: center;
+}
